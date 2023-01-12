@@ -1,2 +1,2 @@
 # website
-Website hsoted via github pages
+Website hosted via github pages

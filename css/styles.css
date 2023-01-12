@@ -26,6 +26,10 @@ body {
 h1 {
     text-align: center;
 }
+/***** Boxes and Rows *****/
+#row {
+    margin: 8px; 
+}
 #subbox {
     position: relative;
     margin-left: auto; 
@@ -38,9 +42,6 @@ h1 {
     width: 120px;
     height: 35px;
     text-align: center;
-}
-#row {
-    margin: 8px; 
 }
 #box {
     background-color: grey;
@@ -64,12 +65,41 @@ h1 {
 #navbar ul li{
     float: right;
     margin: 10px;
+    position: relative;
 }
 #navbar ul li a {
     display: inline-block;
     color: #fff;
     font-size: 20;
 }
+#navbar ul li::after{
+    height: 3px;
+    width: 0;
+    content: '';
+    background: orange;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 0.15s;
+}
+#navbar ul li:hover::after{
+    width: 100%;
+}
+#navbar ul li a:hover{
+    color: orange;
+}
+/**** foto ****/
+#foto {
+    background-image: url('../pics/foto2.jpg');
+    height: 300px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid black;
+}
+
 
 /**** Large devices only ****/
 @media (min-width: 992px){

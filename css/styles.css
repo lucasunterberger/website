@@ -8,7 +8,7 @@ body {
     font-family: "Roboto", serif;
 }
 #document {
-    margin: 8px;
+    margin: 8px 8px 100px 8px;
     background-color: grey;
     clear: both;
     border: 2px solid black;

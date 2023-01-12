@@ -26,10 +26,16 @@ body {
 h1 {
     text-align: center;
 }
-/***** Boxes and Rows *****/
+/***** Rows *****/
 #row {
     margin: 8px; 
 }
+#row-element3:hover, #third-row-element3:hover {
+    transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+}
+/***** Boxes *****/
 #subbox {
     position: relative;
     margin-left: auto; 

@@ -7,12 +7,17 @@ body {
     background-color: rgb(41, 41, 43);
     font-family: "Roboto", serif;
 }
-#document {
-    margin: 8px 8px 100px 8px;
+#document-box {
+    margin: 8px 8px 16px 8px;
     background-color: grey;
     clear: both;
     border: 2px solid black;
     padding: 10px 30px 10px 30px;
+}
+#document {
+    margin: 8px 8px 16px 8px;
+    clear: both;
+    color: rgba(255, 255, 255, 0.80);
 }
 #banner {
     width: 100%;
@@ -113,7 +118,7 @@ h1 {
         float: left;
         width: 33.3%;
     }
-    #document {
+    #document, #document-box{
         width: 700px;
         margin-left: auto;
         margin-right: auto;
@@ -130,7 +135,7 @@ h1 {
         width: 100%;
         clear:both;
     } 
-    #document {
+    #document, #document-box {
         width: 700px;
         margin-left: auto;
         margin-right: auto;
@@ -142,7 +147,7 @@ h1 {
         margin-left: auto;
         margin-right: auto;
     }
-    #document {
+    #document, #document-box {
         margin: 10px
     }
     #row {

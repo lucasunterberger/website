@@ -1,0 +1,31 @@
+# Cross-Origin-Opener-Policy (COOP) and Cross-Origin-Embedder-Policy (COEP)
+# allow your Godot game to use SharedArrayBuffer, which is needed for
+# efficient communication between the main thread and worker threads.
+# The headers below allow COOP and COEP to be used by any origin.
+# Change "*" to your domain name if you want to restrict access to a specific domain.
+#
+# See https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Opener-Policy
+# and https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy
+# for more information.
+
+Header set Cross-Origin-Opener-Policy "same-origin"
+Header set Cross-Origin-Embedder-Policy "require-corp"
+
+# Cross-Origin-Resource-Policy (CORP) allows you to control which origins are
+# allowed to make cross-origin requests to your Godot game. The header below
+# allows any origin to access your game's resources.
+#
+# See https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Resource-Policy
+# for more information.
+
+Header set Cross-Origin-Resource-Policy "cross-origin"
+
+# Content-Security-Policy (CSP) allows you to control which scripts and resources
+# are allowed to be loaded by your Godot game. The header below allows any script
+# to be loaded from the same origin, and allows images, media, and fonts to be
+# loaded from any origin.
+#
+# See https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy
+# for more information.
+
+Header set Content-Security-Policy "default-src 'self'; img-src * data:; media-src *; font-src *"

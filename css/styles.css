@@ -14,11 +14,12 @@ body {
     clear: both;
     border: 2px solid black;
     padding: 10px 30px 10px 30px;
+    color: black;
 }
 #document {
     margin: 8px 8px 16px 8px;
     clear: both;
-    color: rgba(255, 255, 255, 1);
+    color: whitesmoke;
     line-height: 1.25;
 }
 #banner {
